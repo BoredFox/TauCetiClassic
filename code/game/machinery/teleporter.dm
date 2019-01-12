@@ -198,7 +198,7 @@
 			var/turf/T = get_turf(R)
 			if (!T || !R.teleporter_hub || !R.teleporter_console)
 				continue
-			if(T.z == ZLEVEL_CENTCOMM || T.z > 7)
+			if(T.z == ZLEVEL_CENTCOMM)
 				continue
 			var/tmpname = T.loc.name
 			if(areaindex[tmpname])
